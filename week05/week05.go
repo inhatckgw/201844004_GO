@@ -1,7 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strings"
 	"time"
 )
@@ -16,4 +18,9 @@ func main() {
 	replacerGo := strings.NewReplacer("?", "o")
 	fixedGo := replacerGo.Replace(brokenGo)
 	fmt.Println(fixedGo)
+
+	fmt.Print("Input Score: ")
+	reader := bufio.NewReader((os.Stdin))
+	input, _ := reader.ReadString('\n')
+	fmt.Println(input)
 }
