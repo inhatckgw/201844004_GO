@@ -12,8 +12,8 @@ func main() {
 	month := now.Month()
 	fmt.Println(year, month)
 
-	broken := "G# r#cks!"
-	replacer := strings.NewReplacer("#", "o")
-	fixed := replacer.Replace(broken)
-	fmt.Println(fixed)
+	brokenGo := "G? r?cks!"
+	replacerGo := strings.NewReplacer("?", "o")
+	fixedGo := replacerGo.Replace(brokenGo)
+	fmt.Println(fixedGo)
 }
