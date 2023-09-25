@@ -1,0 +1,26 @@
+ydgsgkt
+
+git init
+git status(git 상태 확인)
+git add 파일명(파일을 git이 추적할 수 있도록 추가, 커밋 할 준비를 할 수 있도록 설정)(파일 수정 시 커밋하기 위해서는 반드시 처리해야함)
+git commit -m "=="  (버전 관리, 커밋)
+git config --global user.email " @ " (이메일 설정)
+git config --global user.name "" (유저명 설정)
+git log(예태까지의 커밋 기록을 출력해줌)
+git add . (디렉토리 내의 모든 파일)
+git checkout hashcord ( 과거 커밋한 버전의 것으로 변환)(git log 시의 commit ------------는 해시 코드)
+git checkout - (원래대로)
+
+echo " " >>(redirect) 파일명 (" "를 파일명에 저장)
+cat 파일명 (파일명의 텍스트를 프롬프트 창에 출력)
+  git branch -M main () 
+  git remote add origin https://github.com/inhatckgw/test.git(원격 리토지토리 설정)
+  git remote -v ()
+  git push -u origin main (깃허브에 업로드)
+  git clone https://github.com/inhatckgw/test.git .(.의 의미는 깃허브의 내용을 파일만 이동 안하면 파일 디렉토리로 가져옴)
+  
+  git remote set-url origin https://inhatckgw@github.com/inhatckgw/201844004_GO.git
+ 
+.gitignore   (git 업로드를 원하지 않는 파일 지정)
+
+터미널 창에서 실행
