@@ -9,7 +9,8 @@ import (
 func main() {
 	var now time.Time = time.Now()
 	var year int = now.Year()
-	fmt.Println(year)
+	month := now.Month()
+	fmt.Println(year, month)
 
 	broken := "G# r#cks!"
 	replacer := strings.NewReplacer("#", "o")
