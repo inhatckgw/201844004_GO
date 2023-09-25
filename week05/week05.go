@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"log"
+	"math/rand"
 	"os"
 	"strconv"
 	"strings"
@@ -46,7 +47,37 @@ func main() {
 	} else {
 		grade = "Under A Grade"
 	}
-	fmt.Println(inputScore)
-	fmt.Println("You Will Get:", grade)
+	//fmt.Println(inputScore)
+	fmt.Println("Your Score: ", inputScore, "You Will Get: ", grade)
+
+	targetRandom := rand.Intn(6) + 1 //0-5 사이의 정수
+	fmt.Println(targetRandom)
+
+	rand.Seed(time.Now().Unix())
+	answer := rand.Intn(100) + 1
+	fmt.Println("Game Number (1 - 100)")
+	fmt.Println(answer)
+
+	readerGame := bufio.NewReader(os.Stdin)
+
+	for i := 0; i < 10; i++ {
+		fmt.Println("You have: ", 10-i, "Chance")
+		fmt.Print("Game Num:")
+		input, err := readerGame.ReadString('\n')
+		if err != nil {
+			log.Fatal(err)
+		}
+		input = strings.TrimSpace(input)
+		guess, err := strconv.Atoi(input)
+
+		if guess < answer {
+			fmt.Println("Your Guess is lower than answer")
+		} else if guess > answer {
+			fmt.Println("Your Guess is higher than answer")
+		} else if guess == answer {
+			fmt.Println("Answer")
+			break
+		}
+	}
 
 }
