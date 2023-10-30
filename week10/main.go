@@ -1,9 +1,16 @@
 package main
 
-import "week10/src/greeting"
+import (
+	"201844004_GO/week10/src/greeting"
+	"201844004_GO/week10/src/mymath"
+	"fmt"
+)
 
 func main() {
 	greeting.Hello()
 	greeting.Hi()
-	//해당 week10은 따로 꺼내서 처리해야함, std 에러 발생
+	fmt.Println(mymath.MyAbs(-7))
+	fmt.Println(mymath.MyAbs(99))
+
+	fmt.Println(mymath.MyPower(2, 10))
 }
