@@ -54,5 +54,7 @@ func main() {
 	fmt.Println(d1, d2, d3, d4)
 	d4[0] = "d9"
 	fmt.Println(d1, d2, d3, d4)
+	fmt.Println(d1, len(d1), cap(d1))
+	fmt.Println(d4, len(d4), cap(d4))
 
 }
