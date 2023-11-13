@@ -52,9 +52,11 @@ func main() {
 	d4 := append(d3, "d4", "d4")
 
 	fmt.Println(d1, d2, d3, d4)
+	d2[1] = "d8"
 	d4[0] = "d9"
 	fmt.Println(d1, d2, d3, d4)
 	fmt.Println(d1, len(d1), cap(d1))
 	fmt.Println(d4, len(d4), cap(d4))
+	fmt.Printf("%x %x %x %x\n", &d1[0], &d2[0], &d3[0], &d4[0])
 
 }
