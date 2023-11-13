@@ -46,4 +46,13 @@ func main() {
 	// testS2 := test[0:]
 	// fmt.Println(testS2[1])
 
+	d1 := []string{"d1", "d1"}
+	d2 := append(d1, "d2", "d2")
+	d3 := append(d2, "d3", "d3")
+	d4 := append(d3, "d4", "d4")
+
+	fmt.Println(d1, d2, d3, d4)
+	d4[0] = "d9"
+	fmt.Println(d1, d2, d3, d4)
+
 }
