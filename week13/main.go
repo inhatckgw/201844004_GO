@@ -16,6 +16,6 @@ func main() {
 	fmt.Println(b, len(b), cap(b))
 	fmt.Println(os.Args) //Args = Arguments
 	fmt.Println(os.Args[1:])
-	fmt.Println(os.Args[2])
+	fmt.Println(os.Args[2]) //slice를 통으로 던질 때 slice명... 으로
 
 }
