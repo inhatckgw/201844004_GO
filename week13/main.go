@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 	var a []string
@@ -11,5 +14,8 @@ func main() {
 
 	fmt.Println(a, len(a), cap(a))
 	fmt.Println(b, len(b), cap(b))
+	fmt.Println(os.Args) //Args = Arguments
+	fmt.Println(os.Args[1:])
+	fmt.Println(os.Args[2])
 
 }
