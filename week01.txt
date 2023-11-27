@@ -1,3 +1,4 @@
 week01
 - orientation
 - vcs, git, github, go programming
+- www.github.com/inhatckimtaeganc
